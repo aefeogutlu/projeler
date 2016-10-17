@@ -1,0 +1,44 @@
+import java.util.Scanner;
+public class Work {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		Scanner inputdeger = new Scanner(System.in);
+		
+
+		Person person1 = new Person();
+		Person person2 = new Person();
+		Person person3 = new Person();
+		
+		System.out.println("Lütfen bir ad giriniz: ");
+		String alinan = input.nextLine();
+		person1.name = alinan;
+		
+		System.out.println("Yaşını girin: ");
+		int alinanyas = inputdeger.nextInt();
+		person1.age = alinanyas;
+		
+		System.out.println("Lütfen bir ad giriniz: ");
+		alinan = input.nextLine();
+		person2.name = alinan;
+		
+		System.out.println("Yaşını girin: ");
+		alinanyas = inputdeger.nextInt();
+		person2.age = alinanyas;
+		
+		System.out.println("Lütfen bir ad giriniz: ");
+		alinan = input.nextLine();
+		person3.name = alinan;
+		
+		System.out.println("Yaşını girin: ");
+		alinanyas = inputdeger.nextInt();
+		person3.age = alinanyas;
+		
+		System.out.println(person1.name + " " + person1.age);
+		System.out.println(person2.name + " " + person2.age);
+		System.out.println(person3.name + " " + person3.age);
+		
+		}
+		
+	}
